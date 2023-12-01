@@ -44,22 +44,41 @@ The application will be available at [http://localhost:3000](http://localhost:30
 
 #### Public Route ("/")
 
-Open your browser or use a tool like [curl](https://curl.haxx.se/) or Postman to access the public route:
+Open your browser or use a tool like [curl](https://curl.haxx.se/) / Postman / REST Client plugin `VSCode` to access the public route:
 
-```bash
+### Using Curl
+
+```js
 curl http://localhost:3000
+```
+
+### Using plugin REST Client `VSCode`
+
+```js
+GET http://localhost:3000
 ```
 
 You should receive a JSON response:
 
-```json
-{ "message": "Basic auth using Bun and Hono" }
+```js
+TTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Date: Fri, 01 Dec 2023 16:29:09 GMT
+Content-Length: 124
+
+{
+  "message": "Basic auth using Bun and Hono",
+  "author": "Alif Ryuu BR",
+  "github": "https://github.com/zoelabbb",
+  "version": "1.0.0"
+}
 ```
 
 #### Authenticated Route ("/auth/page")
 
-To access the authenticated route, you need to include the bearer token in the request header. Use the following curl command as an example:
+To access the authenticated route, you need to include the bearer token in the request header.
 
+### Use the following curl command as an example:
 ```bash
 curl -H "Authorization: Bearer iloveprogramming" http://localhost:3000/auth/page
 ```
@@ -69,6 +88,24 @@ You should receive a plain text response:
 ```json
 Auth page : Your token is valid
 ```
+
+### Using REST Client `VSCode`
+```js
+GET http://localhost:3000/auth/page
+
+Authorization: Bearer iloveprogramming
+```
+
+You should receive a response:
+```json
+HTTP/1.1 200 OK
+content-type: text/plain;charset=utf-8
+Date: Fri, 01 Dec 2023 16:41:15 GMT
+Content-Length: 31
+
+Auth page : Your token is valid
+```
+
 
 ## Customization
 
@@ -81,6 +118,7 @@ Feel free to customize the authentication mechanism, routes, or any other aspect
 - `node_modules/`: The directory where npm packages are installed.
 - `package.json`: Project configuration file.
 - `tsconfig.json`: TypeScript configuration file.
+
 # restappbuns
 
 To install dependencies:
