@@ -81,7 +81,6 @@ Feel free to customize the authentication mechanism, routes, or any other aspect
 - `node_modules/`: The directory where npm packages are installed.
 - `package.json`: Project configuration file.
 - `tsconfig.json`: TypeScript configuration file.
-=======
 # restappbuns
 
 To install dependencies:
