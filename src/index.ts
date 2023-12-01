@@ -6,7 +6,12 @@ const app = new Hono();
 const port = parseInt(process.env.PORT || "3000", 10);
 
 const home = app.get("/", (c) => {
-    return c.json({ message: "Basic auth using Bun and Hono" });
+    return c.json({ 
+        message: "Basic auth using Bun and Hono",
+        author: "Alif Ryuu BR",
+        github: "https://github.com/zoelabbb",
+        version: "1.0.0"
+    });
 });
 
 const token = "iloveprogramming";
