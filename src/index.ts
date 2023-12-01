@@ -6,7 +6,7 @@ const app = new Hono();
 const port = parseInt(process.env.PORT || "3000", 10);
 
 const home = app.get("/", (c) => {
-    return c.json({ message: "Hello World" }); // Fix: Corrected the syntax for the json method
+    return c.json({ message: "Basic auth using Bun and Hono" });
 });
 
 const token = "iloveprogramming";
