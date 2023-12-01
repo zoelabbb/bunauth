@@ -85,7 +85,7 @@ curl -H "Authorization: Bearer iloveprogramming" http://localhost:3000/auth/page
 
 You should receive a plain text response:
 
-```json
+```js
 Auth page : Your token is valid
 ```
 
