@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Bun Authentication Basic
 
 I create this a Bun application with basic authentication using `hono`. The application includes a public route ("/") and an authenticated route ("/auth/page") that requires a bearer token.
@@ -98,4 +97,3 @@ bun run index.ts
 ```
 
 This project was created using `bun init` in bun v1.0.14. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
->>>>>>> c76742e (Upload new file)
