@@ -97,7 +97,7 @@ Authorization: Bearer iloveprogramming
 ```
 
 You should receive a response:
-```json
+```js
 HTTP/1.1 200 OK
 content-type: text/plain;charset=utf-8
 Date: Fri, 01 Dec 2023 16:41:15 GMT
