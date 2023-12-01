@@ -53,7 +53,7 @@ curl http://localhost:3000
 You should receive a JSON response:
 
 ```json
-{ "message": "Hello World" }
+{ "message": "Basic auth using Bun and Hono" }
 ```
 
 #### Authenticated Route ("/auth/page")
@@ -66,7 +66,7 @@ curl -H "Authorization: Bearer iloveprogramming" http://localhost:3000/auth/page
 
 You should receive a plain text response:
 
-```
+```json
 Auth page : Your token is valid
 ```
 
