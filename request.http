@@ -1,0 +1,9 @@
+# Get Data
+GET http://localhost:3000 HTTP/1.1
+
+###
+
+# Get Data + Validation with token
+GET  http://localhost:3000/auth/page HTTP/1.1
+# Bearer Auth
+Authorization: Bearer iloveprogramming
