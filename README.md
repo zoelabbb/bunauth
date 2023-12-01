@@ -119,7 +119,7 @@ Feel free to customize the authentication mechanism, routes, or any other aspect
 - `package.json`: Project configuration file.
 - `tsconfig.json`: TypeScript configuration file.
 
-# restappbuns
+# bunauth
 
 To install dependencies:
 
